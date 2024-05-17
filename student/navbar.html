@@ -1,0 +1,76 @@
+<style>
+     .navbar {
+            background-color: #333;
+            overflow: hidden;
+            color: white;
+            padding: 14px 16px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 16px;
+            float: left;
+        }
+        .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+    .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+<div class="navbar">
+    <a href="index.php">Home</a>
+    <!-- <a href="viewmasterschedule.php">View Master Schedule</a> -->
+
+<div class="dropdown">
+    <button class="dropbtn">My Details
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="studentdetails.php">My PERSONAL Details</a>
+
+       <a href="mymajorminordetails.php">My Major & Minor Details</a>
+       <a href="myadvisordetails.php">Advisor Details</a>
+
+    </div>
+  </div> 
+<a href="viewholds.php">View Holds</a>
+<a href="viewdepartmentdetails.php">View Departments</a>
+<div class="dropdown">
+    <button class="dropbtn">Schedule
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+       <a href="viewmasterschedule.php?semesterid=FALL2023">View Master Schedule for Fall 2023</a>
+       <a href="viewmasterschedule.php?semesterid=SPRING2024">View Master Schedule for SPRING 2024</a>
+       <a href="viewsemesterschedule.php?semesterid=FALL2023">View Current Semester Schedule (Fall 2023)</a>
+       <a href="viewsemesterschedule.php?semesterid=SPRING2024">View Next Semester Schedule (SPRING 2024)</a>
+    </div>
+  </div> 
+  <a href="viewtranscriptsummary.php">Transcript</a>
+  <a href="viewdegreeaudit.php">Degree Audit</a>
+    <a href="logout.php">Logout</a>
+</div>
