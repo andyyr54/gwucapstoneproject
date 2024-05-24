@@ -1,0 +1,148 @@
+<style>
+    .navbar {
+        background-color: #333;
+        overflow: hidden;
+        color: white;
+        padding: 14px 16px;
+    }
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 16px;
+        float: left;
+    }
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+    .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    </style>
+    
+    <div class="navbar">
+       <a href="index.php">Home</a>
+       <div class="dropdown">
+         <button class="dropbtn">User Management 
+           <i class="fa fa-caret-down"></i>
+         </button>
+         <div class="dropdown-content">
+            <a href="viewstudentdetails.php">View/Update Student Details</a>
+            <a href="viewfacultydetails.php">View/Update Faculty Details</a>
+            <a href="viewstatsofficedetails.php">View/Update Stats Office Details</a>
+            <a href="addnewstudent.php">Add New Student</a>
+            <a href="addnewfaculty.php">Add New Faculty</a>
+            <a href="addnewstatsofficeuser.php">Add New Stats Office User</a>
+         </div>
+       </div> 
+       <div class="dropdown">
+        <button class="dropbtn">Department
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+           <a href="viewdepartmentdetails.php">View Department Details</a>
+           <a href="addnewdepartmentdetails.php">Add New Department </a>
+        </div>
+      </div> 
+     
+      <div class="dropdown">
+        <button class="dropbtn">Hold
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+           <a href="viewexistinghold.php">View All Exsiting Students on Hold</a>
+           <a href="addnewstudentonhold.php">Add a new student on Hold</a>
+        </div>
+      </div> 
+
+      <div class="dropdown">
+        <button class="dropbtn">Major
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+           <a href="viewallmajors.php">View/Update All Majors</a>
+           <a href="viewallmajorrequirements.php">View/Update All Major Requirements</a>
+           <a href="addnewmajor.php">Add New Major</a>
+           <a href="addnewmajorrequirements.php">Add New Major Requirements</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn">Minor
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+           <a href="viewallminors.php">View/Update All Minors</a>
+           <a href="viewallminorrequirements.php">View/Update All Minor Requirements</a>
+           <a href="addnewminor.php">Add New Minor</a>
+           <a href="addnewminorrequirements.php">Add New Minor Requirements</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn">Course
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+           <a href="viewallcourses.php">View/Update All Course</a>
+           <a href="addnewcourse.php">Add New Course</a>
+           <a href="addnewcourseprerequisite.php">Add New CoursePre-requisite </a>
+         
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn">Course Section
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+           <a href="selectsemesterforcoursesection.php">View/Update All Course Section Details</a>
+           <a href="addnewcoursesection.php">Add New Course Section </a>
+           <a href="assignfacultytocoursesection.php">Assign Faculty to Course Section </a>
+           <a href="addstudenttocoursesection.php">DROP/Enroll Student to Course Section </a>
+
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn">Schedule
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+           <a href="viewmasterschedule.php?semesterid=FALL2023">View Master Schedule for Fall 2023</a>
+           <a href="viewmasterschedule.php?semesterid=SPRING2024">View Master Schedule for SPRING 2024</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn">Academic Details
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="transcript.php">Transcript</a>
+            <a href="degreeaudit.php">Degree Audit</a>
+        </div>
+      </div>
+      <a href="viewadvising.php">Advising</a>
+    
+       <!-- <a href="viewmasterschedule.php">View Master Schedule</a> -->
+       <a href="logout.php">Logout</a>
+    </div>
+    
